@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Multiplication</h2>
+       
+<form onsubmit="calculate('multiplication'); return false;">
+    <label for="num4">Nombre 1 :</label>
+    <input type="number" id="num4" name="number4" placeholder="Nombre 1" required>
+    <label for="num5">Nombre 2 :</label>
+    <input type="number" id="num5" name="number5" placeholder="Nombre 2" required>
+    <label for="num6">Nombre 3 :</label>
+    <input type="number" id="num6" name="number6" placeholder="Nombre 3">
+    <button type="submit">Calculer</button>
+</form>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

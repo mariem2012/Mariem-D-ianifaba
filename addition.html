@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Addition</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Addition</h1>
-    <div class="additon">
-        <label for="number"></label>
-        <input type="number" id="numb" name="number1" placeholder="number1">
-        <label for="number"></label>
-        <input type="number" id="numb" name="number2" placeholder="number2">
+    <h2>Addition</h2>
+    <form onsubmit="calculate('addition'); return false;">
+        <label for="num1">Nombre 1 :</label>
+        <input type="number" id="num1" name="number1" placeholder="Nombre 1" required>
+        <label for="num2">Nombre 2 :</label>
+        <input type="number" id="num2" name="number2" placeholder="Nombre 2" required>
+        <label for="num3">Nombre 3 :</label>
+        <input type="number" id="num3" name="number3" placeholder="Nombre 3">
         <button type="submit">Calculer</button>
-        <p id="resultat">Resultat</p>
-    </div>
+    </form>
+
+        <div id="result">Resultat</div>
+
+    <script src="script.js"></script>
 </body>
 </html>
